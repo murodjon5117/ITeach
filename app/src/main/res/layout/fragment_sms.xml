@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="FFFFFF, 30%"
+    android:background="#4DFFFFFF"
     android:layout_height="match_parent"
     tools:context=".SmsFragment">
     <ImageView
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
         tools:ignore="SmallSp" />
-<com.
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@id/desc"
