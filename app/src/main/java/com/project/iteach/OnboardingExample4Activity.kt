@@ -1,5 +1,6 @@
 package com.project.iteach
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -37,7 +38,8 @@ class OnboardingExample4Activity : AppCompatActivity() {
 
         btnNext.setOnClickListener {
             if (getItem(+1) > mViewPager.childCount-1) {
-
+                val intent = Intent(this,RegisterActivity::class.java)
+                startActivity(intent)
                 finish()
             } else {
                 mViewPager.setCurrentItem(getItem(+1), true)
