@@ -48,23 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
         tools:ignore="SmallSp" />
-    <in.aabhasjindal.otptextview.OtpTextView
-        android:id="@+id/otp_view"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/shadow"
-        android:textColor="#000"
-        app:bar_enabled="true"
-        app:bar_height="2dp"
-        app:height="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
-        app:length="6"
-        app:otp_text_size="24dp"
-        app:width="40dp"
-        tools:ignore="MissingConstraints" />
+<com.
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@id/desc"
