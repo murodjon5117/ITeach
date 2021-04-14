@@ -37,6 +37,7 @@ class OnboardingExample4Activity : AppCompatActivity() {
 
         btnNext.setOnClickListener {
             if (getItem(+1) > mViewPager.childCount-1) {
+
                 finish()
             } else {
                 mViewPager.setCurrentItem(getItem(+1), true)

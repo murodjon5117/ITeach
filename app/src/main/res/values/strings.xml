@@ -17,4 +17,6 @@
     <string name="finish">finish</string>
     <string name="next">next</string>
     <string name="back">back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

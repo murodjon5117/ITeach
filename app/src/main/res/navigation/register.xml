@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    app:startDestination="@id/numberFragment">
+
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.project.iteach.NumberFragment"
+        android:label="fragment_number"
+        tools:layout="@layout/fragment_number" >
+        <action
+            android:id="@+id/action_numberFragment_to_smsFragment"
+            app:destination="@id/smsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.project.iteach.SmsFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" />
+</navigation>
