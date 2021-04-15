@@ -17,7 +17,12 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
           />
+<com.mukesh.OtpView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
 
+</com.mukesh.OtpView>
    <TextView
        android:id="@+id/title"
        android:layout_width="wrap_content"
