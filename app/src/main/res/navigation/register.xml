@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/numberFragment"
-        android:name="com.project.iteach.NumberFragment"
+        android:name="com.project.iteach.login.NumberFragment"
         android:label="fragment_number"
         tools:layout="@layout/fragment_number" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/smsFragment"
-        android:name="com.project.iteach.SmsFragment"
+        android:name="com.project.iteach.login.SmsFragment"
         android:label="fragment_sms"
         tools:layout="@layout/fragment_sms" />
 </navigation>

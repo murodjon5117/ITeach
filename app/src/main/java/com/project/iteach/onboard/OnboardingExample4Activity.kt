@@ -1,10 +1,12 @@
-package com.project.iteach
+package com.project.iteach.onboard
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.viewpager.widget.ViewPager
+import com.project.iteach.R
+import com.project.iteach.login.RegisterActivity
 
 import kotlinx.android.synthetic.main.activity_onboarding_example4.*
 
@@ -38,7 +40,7 @@ class OnboardingExample4Activity : AppCompatActivity() {
 
         btnNext.setOnClickListener {
             if (getItem(+1) > mViewPager.childCount-1) {
-                val intent = Intent(this,RegisterActivity::class.java)
+                val intent = Intent(this, RegisterActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

@@ -1,4 +1,4 @@
-package com.project.iteach
+package com.project.iteach.onboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieAnimationView
+import com.project.iteach.R
 import kotlinx.android.synthetic.main.fragment_onboarding4.view.*
 
 class OnboardingFragment4 : Fragment() {

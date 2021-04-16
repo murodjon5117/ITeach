@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="#4DFFFFFF"
     android:layout_height="match_parent"
-    tools:context=".SmsFragment">
+    tools:context=".login.SmsFragment">
     <ImageView
         android:id="@+id/imageview"
         android:layout_marginTop="52dp"
@@ -59,15 +59,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="120dp"
+            <com.mukesh.OtpView
+                app:itemCount="4"
+                app:itemSpacing="1dp"
+                app:lineColor="@color/black"
+                app:lineWidth="10dp"
+                app:viewType="line"
+                app:hideLineWhenFilled="true"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 >
-            </com.google.android.material.textfield.TextInputEditText>
+            </com.mukesh.OtpView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

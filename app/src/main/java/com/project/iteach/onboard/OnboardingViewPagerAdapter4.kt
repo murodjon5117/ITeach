@@ -1,9 +1,10 @@
-package com.project.iteach
+package com.project.iteach.onboard
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.project.iteach.R
 
 class OnboardingViewPagerAdapter4(manager: FragmentManager,
                                   private val context : Context) :
@@ -18,19 +19,19 @@ class OnboardingViewPagerAdapter4(manager: FragmentManager,
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> OnboardingFragment4.newInstance(
-                context.resources.getString(R.string.title_onboarding_1),
-                context.resources.getString(R.string.description_onboarding_1),
-                R.raw.mobile_tap_interaction_animation
+                    context.resources.getString(R.string.title_onboarding_1),
+                    context.resources.getString(R.string.description_onboarding_1),
+                    R.raw.mobile_tap_interaction_animation
             )
             1 -> OnboardingFragment4.newInstance(
-                context.resources.getString(R.string.title_onboarding_2),
-                context.resources.getString(R.string.description_onboarding_2),
-                R.raw.mobile_application
+                    context.resources.getString(R.string.title_onboarding_2),
+                    context.resources.getString(R.string.description_onboarding_2),
+                    R.raw.mobile_application
             )
             2 -> OnboardingFragment4.newInstance(
-                context.resources.getString(R.string.title_onboarding_3),
-                context.resources.getString(R.string.description_onboarding_3),
-                R.raw.payment
+                    context.resources.getString(R.string.title_onboarding_3),
+                    context.resources.getString(R.string.description_onboarding_3),
+                    R.raw.payment
             )
             else -> null
         }!!

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#4DFFFFFF"
     android:layout_height="match_parent"
-    tools:context=".NumberFragment">
+    tools:context=".login.NumberFragment">
 
    <ImageView
        android:id="@+id/imageview"
