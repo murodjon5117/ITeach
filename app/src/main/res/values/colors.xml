@@ -313,4 +313,7 @@
     <color name="md_blue_grey_800">#37474F</color>
     <color name="md_blue_grey_900">#263238</color>
 
+    <!--ITeachSpecial-->
+    <color name="my_color_grey">#91919F</color>
+    <color name="my_color_primary_blue">#6360FF</color>
 </resources>

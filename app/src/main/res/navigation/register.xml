@@ -18,5 +18,14 @@
         android:id="@+id/smsFragment"
         android:name="com.project.iteach.login.SmsFragment"
         android:label="fragment_sms"
-        tools:layout="@layout/fragment_sms" />
+        tools:layout="@layout/fragment_sms" >
+        <action
+            android:id="@+id/action_smsFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.project.iteach.login.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
 </navigation>

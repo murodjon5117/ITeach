@@ -8,7 +8,7 @@
     tools:context=".login.NumberFragment">
 
    <ImageView
-       android:id="@+id/imageview"
+       android:id="@+id/imageView"
        android:layout_marginTop="70dp"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -17,12 +17,6 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
           />
-<com.mukesh.OtpView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:ignore="MissingConstraints">
-
-</com.mukesh.OtpView>
    <TextView
        android:id="@+id/title"
        android:layout_width="wrap_content"
@@ -35,7 +29,7 @@
        android:textStyle="bold"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/imageview" />
+       app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
    <TextView
        android:layout_marginTop="10dp"

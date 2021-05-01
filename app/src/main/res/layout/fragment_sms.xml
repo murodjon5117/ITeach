@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#4DFFFFFF"
     android:layout_height="match_parent"
+    android:background="#F1F1FA"
     tools:context=".login.SmsFragment">
+
     <ImageView
-        android:id="@+id/imageview"
-        android:layout_marginTop="52dp"
+        android:id="@+id/imageView"
         android:layout_width="133dp"
-        android:layout_height="207dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="55dp"
         android:src="@drawable/ic_sms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title"
@@ -28,20 +27,20 @@
         android:textColor="@color/dark_blue"
         android:textSize="22sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/imageview" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:layout_marginTop="13dp"
         android:id="@+id/desc"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
         android:gravity="center"
-        android:lines="2"
+        android:lines="4"
         android:text="@string/enter_number"
-        android:textSize="11sp"
         android:textColor="@color/dark_blue"
+        android:textSize="11sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,38 +48,54 @@
         tools:ignore="SmallSp" />
 
     <androidx.cardview.widget.CardView
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/cv_sms"
+        app:cardCornerRadius="10dp"
         android:layout_width="335dp"
-        app:layout_constraintTop_toBottomOf="@id/desc"
-        android:layout_margin="8dp"
-        android:layout_height="60dp">
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc">
+
         <androidx.constraintlayout.widget.ConstraintLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.mukesh.OtpView
-                app:itemCount="4"
-                app:itemSpacing="1dp"
-                app:lineColor="@color/black"
-                app:lineWidth="10dp"
-                app:viewType="line"
-                app:hideLineWhenFilled="true"
-                android:layout_width="wrap_content"
+                android:layout_width="81dp"
                 android:layout_height="40dp"
+                android:fontFamily="@font/droid_sans_mono"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:text="1234"
+                android:textSize="24sp"
+                app:hideLineWhenFilled="false"
+                app:itemCount="4"
+                app:itemSpacing="7dp"
+                app:itemWidth="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                >
-            </com.mukesh.OtpView>
+                app:lineColor="@color/my_color_grey"
+                app:lineWidth="10dp"
+                app:viewType="line" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
     </androidx.cardview.widget.CardView>
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:text="Next"
+        android:background="@color/my_color_primary_blue"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/cv_sms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"
 
-
-
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
