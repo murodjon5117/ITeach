@@ -316,4 +316,5 @@
     <!--ITeachSpecial-->
     <color name="my_color_grey">#91919F</color>
     <color name="my_color_primary_blue">#6360FF</color>
+    <color name="my_color_background">#F1F1FA</color>
 </resources>
